@@ -1,0 +1,17 @@
+{
+  "display_name": "LongFlow",
+  "loading_order": 999,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Independent SillyTavern adaptation",
+  "version": "0.3.6",
+  "auto_update": true,
+  "minimum_client_version": "1.17.0",
+  "hooks": {
+    "activate": "init",
+    "enable": "onEnable",
+    "disable": "onDisable"
+  }
+}
