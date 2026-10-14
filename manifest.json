@@ -7,7 +7,7 @@
   "css": "style.css",
   "author": "Original: LongFlow contributors; local reliability patch",
   "version": "0.3.6-patch.1",
-  "auto_update": false,
+  "auto_update": true,
   "minimum_client_version": "1.17.0",
   "hooks": {
     "activate": "init",
