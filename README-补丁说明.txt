@@ -1,7 +1,7 @@
 FlowBridge / LongFlow 流式修复实验版
 
 来自 https://github.com/chengcheng321/FlowBridge (v0.3.6) 的本地补丁。
-已上传至此仓库测试分支 test/longflow-stream-fix-20261014-110224；并非经过实机验证的正式发布，建议保留原版备份。
+修复版已发布到 main 默认分支，可直接使用仓库地址安装。原版保存在 backup/longflow-original-20261014-110224。
 
 修复重点：
 1. 流式 SSE 消息边界，支持 CRLF 跨数据块、纯 CR、纯 LF。
@@ -13,9 +13,8 @@ FlowBridge / LongFlow 流式修复实验版
 7. 非流式 resp.clone().json()，解析失败时保留可供消费的原响应。
 8. 扩展禁用时尽量卸载 fetch hook，自动更新禁用避免补丁被覆盖。
 
-获取测试版：打开 https://github.com/chengcheng321/FlowBridge/tree/test/longflow-stream-fix-20261014-110224
-在 GitHub 页面点击 Code -> Download ZIP，解压后使用根目录的修复文件。
-注意：直接通过仓库默认地址安装仍会获取 main 原版；测试分支需要手动切换或覆盖对应文件。
+安装：SillyTavern → 扩展 → 安装扩展，填写 https://github.com/chengcheng321/FlowBridge
+如果已经安装了原版，先在扩展管理里尝试更新，再刷新页面；无法更新时备份并重新安装。
 
 使用：先备份原插件文件，把本目录中的 index.js 覆盖现有插件的 index.js，
 然后刷新 SillyTavern 网页。也可将整个目录放到 SillyTavern 的第三方扩展目录，
