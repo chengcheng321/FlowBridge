@@ -1,12 +1,12 @@
 {
-  "display_name": "LongFlow",
+  "display_name": "LongFlow (stream patch)",
   "loading_order": 999,
   "requires": [],
   "optional": [],
   "js": "index.js",
   "css": "style.css",
-  "author": "Independent SillyTavern adaptation",
-  "version": "0.3.6",
+  "author": "Original: LongFlow contributors; local reliability patch",
+  "version": "0.3.6-patch.1",
   "auto_update": true,
   "minimum_client_version": "1.17.0",
   "hooks": {
